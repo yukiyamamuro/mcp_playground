@@ -1,0 +1,44 @@
+{
+  "checksums": [
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.1.29/bun-darwin-aarch64.zip",
+      "checksum": "45232E79A9667477BBA8617084AF5EE754C40F73DA0B04AACDDE1A8F644A3311",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.1.29/bun-darwin-x64.zip",
+      "checksum": "A020487DB7F6F9B8AD54A45E95852688FC50277161A12650FD3280BA8B8039C8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.1.29/bun-linux-x64.zip",
+      "checksum": "46729CCD807F2245185419D192D085847B26BCE6D0A2F54C7C28A5A89AB7AB58",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-495.0.0-darwin-arm.tar.gz",
+      "checksum": "DE42BA0035B7AA8B4EB827717D727A5E2D0AFBA6B51D0C7C8EA3A4FFD444C2BD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-495.0.0-darwin-x86_64.tar.gz",
+      "checksum": "A0BFBA6F70A9E7E27D97F67F2D1B7AE3C7907067B77A6AAFC13BB4037E9F1A0F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-495.0.0-linux-arm.tar.gz",
+      "checksum": "5109A33A56BE32F64AF37A42E7AA45643B5DEC9BE4E9E030D001E52A71E18798",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-495.0.0-linux-x86_64.tar.gz",
+      "checksum": "5E76F6DAE80E4EB07CDCA607793A461162FD8D433B23EC2CC90403F686584044",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.228.0/registry.yaml",
+      "checksum": "FE7F63F317CD71045506D7BB28FB735591D8F06A423B04202C0480FDC6B2702D",
+      "algorithm": "sha256"
+    }
+  ]
+}

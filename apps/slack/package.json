@@ -1,0 +1,16 @@
+{
+  "name": "slack",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "bun run --hot server.ts"
+	},
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1"
+  }
+}

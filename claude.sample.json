@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f",
+        "/Users/{{ your User Name }}/mcp_playground/compose.yml",
+        "exec",
+        "slack-mcp",
+        "node",
+        "dist/index.js"
+      ],
+      "env": {
+        "SLACK_BOT_TOKEN": "xoxb-xxxxxxxxxxxx",
+        "SLACK_TEAM_ID": "TXXXXXXXXX"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+[tools]
+node = "21.6.1"
+
+[env]
+mise.file = ".env"

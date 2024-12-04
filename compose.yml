@@ -1,0 +1,21 @@
+services:
+  slack-mcp:
+    build:
+      context: .
+      dockerfile: ./apps/slack/Dockerfile
+    container_name: slack-mcp
+    command: bun dev
+    env_file:
+      - path: ./.env
+        required: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    stdin_open: true # stdinを開いたままにする
+    tty: true # 疑似TTYを割り当てる
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    name: mcp-network
+    driver: bridge
