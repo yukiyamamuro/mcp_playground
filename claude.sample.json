@@ -1,5 +1,35 @@
 {
   "mcpServers": {
+    "filesystem":{
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f",
+        "/Users/{{ your User Name }}/mcp_playground/compose.yml",
+        "exec",
+        "filesystem-mcp",
+        "bun",
+        "run",
+        "server.ts",
+        "/app"
+      ]
+    },
+    "notion": {
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f",
+        "/Users/{{ your User Name }}/mcp_playground/compose.yml",
+        "exec",
+        "notion-mcp",
+        "bun",
+        "run",
+        "server.ts"
+      ],
+      "env": {
+        "NOTION_BOT_TOKEN": "ntn_xxxxxxxxxxxxx"
+      }
+    },
     "slack": {
       "command": "docker",
       "args": [
@@ -8,8 +38,9 @@
         "/Users/{{ your User Name }}/mcp_playground/compose.yml",
         "exec",
         "slack-mcp",
-        "node",
-        "dist/index.js"
+        "bun",
+        "run",
+        "server.ts"
       ],
       "env": {
         "SLACK_BOT_TOKEN": "xoxb-xxxxxxxxxxxx",

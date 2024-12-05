@@ -1,4 +1,37 @@
 services:
+  filesystem-mcp:
+    build:
+      context: .
+      dockerfile: ./apps/filesystem/Dockerfile
+    container_name: filesystem-mcp
+    command: bun dev
+    env_file:
+      - path: ./.env
+        required: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./apps/filesystem/outputs:/app/apps/filesystem/outputs
+    stdin_open: true # stdinを開いたままにする
+    tty: true # 疑似TTYを割り当てる
+    networks:
+      - mcp-network
+
+  notion-mcp:
+    build:
+      context: .
+      dockerfile: ./apps/notion/Dockerfile
+    container_name: notion-mcp
+    command: bun dev
+    env_file:
+      - path: ./.env
+        required: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    stdin_open: true # stdinを開いたままにする
+    tty: true # 疑似TTYを割り当てる
+    networks:
+      - mcp-network
+
   slack-mcp:
     build:
       context: .
