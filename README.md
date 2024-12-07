@@ -1,4 +1,6 @@
 # mcp Playground
+mcp servers run on bun
+
 ## Requirement
 - DockerDesktop
 - aqua
