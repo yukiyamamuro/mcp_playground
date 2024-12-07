@@ -1,4 +1,15 @@
 services:
+  fetcher-mcp:
+    build:
+      context: .
+      dockerfile: ./apps/fetcher/Dockerfile
+    container_name: fetcher-mcp
+    command: bun dev
+    stdin_open: true # stdinを開いたままにする
+    tty: true # 疑似TTYを割り当てる
+    networks:
+      - mcp-network
+
   filesystem-mcp:
     build:
       context: .
@@ -9,7 +20,6 @@ services:
       - path: ./.env
         required: true
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
       - ./apps/filesystem/outputs:/app/apps/filesystem/outputs
     stdin_open: true # stdinを開いたままにする
     tty: true # 疑似TTYを割り当てる
@@ -25,8 +35,6 @@ services:
     env_file:
       - path: ./.env
         required: true
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     stdin_open: true # stdinを開いたままにする
     tty: true # 疑似TTYを割り当てる
     networks:
@@ -41,8 +49,6 @@ services:
     env_file:
       - path: ./.env
         required: true
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     stdin_open: true # stdinを開いたままにする
     tty: true # 疑似TTYを割り当てる
     networks:

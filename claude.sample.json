@@ -1,5 +1,18 @@
 {
   "mcpServers": {
+    "fetcher": {
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f",
+        "/Users/{{ your User Name }}/mcp_playground/compose.yml",
+        "exec",
+        "fetcher-mcp",
+        "bun",
+        "run",
+        "server.ts"
+      ]
+    },
     "filesystem":{
       "command": "docker",
       "args": [
