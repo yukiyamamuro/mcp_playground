@@ -1,6 +1,8 @@
 # mcp Playground
 ## Requirement
 - DockerDesktop
+- aqua
+- mise
 
 ## setup
 ```
