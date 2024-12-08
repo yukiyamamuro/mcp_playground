@@ -2,9 +2,9 @@
 mcp servers run on bun
 
 ## Requirement
-- DockerDesktop
-- aqua
-- mise
+- [Docker](https://www.docker.com/ja-jp/)
+- [aqua](https://aquaproj.github.io/)
+- [mise](https://mise.jdx.dev/getting-started.html)
 
 ## setup
 ```
